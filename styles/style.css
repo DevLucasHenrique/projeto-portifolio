@@ -153,6 +153,7 @@ article .video-container {
 }
 
 #skill-container .nome {
+  margin-bottom: 12px;
   font-weight: bold;
   color: var(--texto);
 }
@@ -173,6 +174,35 @@ article .video-container {
   height: 100%;
   background-color: var(--destaque-inverso);
   border-radius: 4px;
+}
+
+#formacao-container {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 20px;
+}
+
+#formacao-container .curso {
+  background-color: var(--fundo-principal);
+  border-left: 5px solid var(--destaque-inverso);
+  padding-left: 16px;
+  transition: border-width 0.2s;
+  border-radius: 12px;
+}
+
+#formacao-container .curso:hover{
+  border-left-width: 15px;
+}
+
+#formacao-container .periodo{
+  font-size: 0.8em;
+  font-weight: bold;
+  color: var(--texto);
+}
+
+#formacao-container .instituicao {
+  font-size: 1.1em;
+  color: var(--destaque-inverso);
 }
 
 @media screen and (min-width: 768px) {
